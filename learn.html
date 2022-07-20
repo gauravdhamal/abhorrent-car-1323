@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    button{
+      border: none;
+      box-sizing: border-box;
+      padding: 10px;
+      font-size: 25px;
+       background-color: blue;
+       color: white;
+       text-align: center;
+    }
+    #top {
+      margin: auto;
+      width: 95%;
+      /* border: 2px solid black; */
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      align-content: center;
+      background-color: #303030;
+    }
+
+    #top>div {
+      /* border: 2px solid red; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+
+    #btndiv {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      /* border: 2px solid green; */
+    }
+    #btndiv>:first-child>button{
+      background-color:#FFFFFF;
+      color: black;
+}
+    #btndiv>:nth-child(2)>button{
+      background-color: #303030;
+    }
+    #parttwo>img {
+      width: 100%;
+    }
+
+    #body1 {
+      margin: auto;
+      width: 95%;
+      /* border: 2px solid black; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+
+    }
+
+    #bodyfix {
+      margin: auto;
+      width: 70%;
+      /* border: 2px solid red; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+    #fixheading{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+    }
+    #fixp{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+    }
+    #fixcontainer{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      align-content: center;
+    }
+    #fixcontainer>.box{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      align-content: center;
+    }
+ #fixcontainer>.box>h4,p{
+  width: 100%;
+ }
+ #body2{
+  width: 70%;
+  margin: auto;
+  /* border:  2px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+ }
+ #body2>div{
+  /* border: 2px solid black; */
+ }
+ #body2>#imgdiv>img{
+  width: 100%;
+ }
+ #body2>#pdiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  
+ }
+ #body3{
+  width: 55%;
+  margin: auto;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+ }
+  </style>
+</head>
+
+<body>
+  <div id="top">
+    <div id="partone">
+      <h3>--- UNBOUNCE CONVERSION INTELLIGENCE</h3>
+      <h1>What is convertion inelligence?</h1>
+      <p>
+        Conversion intelligence is pairing your emarketing IQ with machine
+        learning to identify and act on conversion opportunities you normally
+        can’t see on your own. This is the fastest way to build relevance and
+        increase your chance of getting each and every visitor to convert.
+      </p>
+      <div id="btndiv">
+        <div>
+          <button>read our vision</button>
+        </div>
+        <div>
+          <button>start 14-day trial</button>
+        </div>
+      </div>
+    </div>
+    <div id="parttwo">
+      <img src="https://unbounce.com/photos/Conversion-Intelligence-Page-Hero-Image-1.png" alt="" />
+    </div>
+  </div>
+  <div id="body1">
+    <div id="bodyfix">
+      <div id="fixhading">
+        <h2>
+          Turns out, we’ve been thinking about marketing all wrong
+        </h2>
+      </div>
+      <div id="fixp">
+        <p>
+          For years, the ideal process for marketers was to build a campaign,
+        </p>
+      </div>
+      <div id="fixcontainer">
+        <div class="box">
+          <h4>Building is guesswork</h4>
+          <p>Unless you’re one of those rare experts who knows what’ll be high-converting ahead of time, you’re stuck
+            building
+            content based on nothing but hunches and hard-to-verify research. (Hello, confirmation bias!)</p>
+        </div>
+        <div class="box">
+          <h4>Optimization is flawed</h4>
+          <p>Only a small fraction of marketers take the time to optimize properly. Even worse—it’s impossible to A/B
+            test a
+            one-size-fits-all experience that works for everyone. “Champion” variants only get you so far.</p>
+        </div>
+        <div class="box">
+          <h4>Learning is complicated</h4>
+          <p>Marketers are overloaded with data. Undoubtedly, there are golden nuggets out there that can help you get
+            higher
+            conversion rates. But where are they? Probably buried in a spreadsheet somewhere six tabs deep.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="body2">
+    <div id="imgdiv">
+      <img src="https://unbounce.com/wp-content/webp-express/webp-images/doc-root/photos/Victoria-Harkes-headshot.png.webp" alt="">
+    </div>
+    <div id="pdiv">
+      <p>The Design Assistant makes it so I don’t need to look at competitors, do the research, and can trust that you’re going
+      to tell me what’s going to work.</p>
+      <p>Zoe Alexander, Marketing Project Manager</p>
+      <p>P A N T H E O N</p>
+    </div>
+  </div>
+  <div id="body3">
+    <h3>See how Smart Builder gets you more conversions</h3>
+    <button>Learn more</button>
+  </div>
+  <div id="last"></div>
+</body>
+
+</html>
