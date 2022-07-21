@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        div {
+            /* border:  2px solid black; */
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+        }
+
+        button {
+            border: none;
+            box-sizing: border-box;
+            padding: 10px;
+            font-size: 25px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+        }
+
+        #top {
+            margin: auto;
+            width: 95%;
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+            background-color: #303030;
+        }
+
+        #top>div {
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        #btndiv {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            /* border: 2px solid green; */
+        }
+
+        #btndiv>:first-child>button {
+            background-color: #FFFFFF;
+            color: black;
+        }
+
+        #btndiv>:nth-child(2)>button {
+            background-color: #303030;
+        }
+
+        #parttwo>img {
+            width: 100%;
+        }
+
+        .body1 {
+            margin: auto;
+            width: 95%;
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+
+        }
+
+        .bodyfix {
+            margin: auto;
+            width: 70%;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .fixheading {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+        }
+
+        .fixp {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+        }
+
+        /* .fixp>div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+
+        } */
+        .fiximg {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            align-content: flex-end;
+            /* border: 2px solid blue; */
+            text-align: end;
+        }
+
+        #fiximg {
+            width: 100%;
+        }
+
+
+        #fixcontainer {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+        }
+
+        #fixcontainer>.box {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+        }
+
+        #fixcontainer>.box>h4,
+        p {
+            width: 100%;
+        }
+
+        #body2 {
+            width: 70%;
+            margin: auto;
+            /* border:  2px solid black; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+        }
+
+        #body2>div {
+            /* border: 2px solid black; */
+        }
+
+        #body2>#imgdiv>img {
+            width: 100%;
+        }
+
+        #body2>#pdiv {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+
+        }
+
+        #body3 {
+            width: 55%;
+            margin: auto;
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            align-content: center;
+        }
+
+        #body4 {
+            width: 70%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            align-content: center;
+        }
+
+        #body5 {
+            width: 60%;
+            margin: auto;
+        }
+
+        #body5>img {
+            width: 100%;
+        }
+
+        #body6 {
+            width: 70%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+            /* background-color: #303030; */
+            border: 2px solid black;
+        }
+
+        #body6>:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+            border: 2px solid blue;
+             
+        }
+
+        #body6>:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+            border: 2px solid black;
+        }
+           #body6>:nth-child(2)>:nth-child(1){
+            font-size: 30px;
+           }  
+
+        #body6>:nth-child(2)>:nth-child(2) {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            
+            /* border: 2px solid red; */
+        }
+
+        /* #body6>:nth-child(2)>:nth-child(2){
+            display: flex;
+            flex-direction: row;
+            border:  2px solid black;
+           } */
+       
+
+        #body6>:nth-child(2)>:last-child {
+            border: 5px solid green;
+        }
+
+        #body6>:nth-child(2)>:last-child>:first-child {
+            border: 5px  solid black;
+            width: 40%;
+        }
+         #body6>:nth-child(2)>:last-child>:first-child>img {
+            width: 100%;
+        }
+        #body6>:nth-child(2)>:last-child>:last-child {
+            border: 10px solid brown;
+        }
+
+       #body7a{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+       }
+       #body7a>img{
+        width: 100%;
+       }
+       #body7a>#b7box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        border: 2px solid red;
+       }
+        #body7a>#b7box>div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+         .link{
+            width: 70%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+         }
+          
+         .oli{
+            width: 100%;
+            margin: auto;
+            background-color: #303030;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            color:white
+         }
+         .olidiv{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            color: white;
+         }
+         .boxes{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+            gap: 20px;
+            color: #000000;
+            background-color: #000000;
+         }
+         .boxes>div{
+            background-color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            border: 2px solid black;
+
+         }
+
+     
+    </style>
+</head>
+
+<body>
+    <div id="top">
+        <div id="partone">
+            <h3>--- Marketer & Machine</h3>
+            <h1>The Conversion Intelligence Guide to Optimization</h1>
+            <p>
+                Old-school optimization just doesn’t cut it anymore. Learn how to pair your marketing know-how with
+                machine learning to
+                create your highest-performing campaigns ever.
+            </p>
+
+        </div>
+        <div id="parttwo">
+            <img src="https://unbounce.com/photos/Mobile-Image-Hero-Banner-Optimize-Pillar-Blank.jpg" alt="" />
+        </div>
+    </div>
+    <div class="body1">
+        <div class="bodyfix">
+            <div class="fixhading">
+                <h2>
+                    The Digital Landscape Has Never Been More Competitive
+                </h2>
+            </div>
+            <div class="fixp">
+                <p>It used to be easier for marketers to stand out online. (Heck, just <em>being online</em> gave you a
+                    big advantage
+                    over lots of your competitors.) But over the past decade, a wave of martech platforms has
+                    democratized the entire
+                    digital marketing process.
+                </p>
+                <p>The result? <strong>Now, everybody is doing the same thing</strong>.</p>
+                <p>Your best hope for cutting through the noise is optimization—finding ways to incrementally improve
+                    your campaigns and
+                    create higher-converting experiences. But for lots of businesses, that’s easier said than done.</p>
+
+                <p>“You should test that” has become one of the most irksome pieces of marketing advice I hear. Testing
+                    is great in
+                    theory, but unless you’re a large organization with huge traffic, expert knowledge, and some very
+                    deep pockets,
+                    you’re unlikely to see much success.</p>
+                <p><strong>So how can regular marketers get an optimization edge?</strong></p>
+
+                <p>At Unbounce, <strong>we’re championing a new approach called conversion intelligence</strong>, which
+                    addresses the
+                    challenges of optimization and makes it much easier to increase the conversion rates of your
+                    campaigns.</p>
+                <p>We used to say that simply having a landing page was enough to give you an edge over your
+                    competition, but it’s no
+                    longer true—partly because it’s such a widely known best practice.</p>
+                <p>Today, what’s giving marketers an advantage is data and automation. <strong>Their advantage is the
+                        machine</strong>.
+                </p>
+                <p>In this step-by-step guide, we’ll show you how conversion intelligence works and explain the ways
+                    that it can help
+                    you out-optimize the competition.<br></p>
+            </div>
+            <div class="fiximg">
+                <img src="https://unbounce.com/wp-content/webp-express/webp-images/doc-root/photos/CI_Pillar_Oli.jpeg.webp"
+                    alt="">
+                <p> Oli Gardner , Co-Founder, Unbounce</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="bodyfix">
+        <div class="fixhading">
+            <h2>
+                So, You Want to Adopt a Conversion Intelligence Process
+            </h2>
+        </div>
+        <div class="fixp">
+            <p>
+                <a href="#what_is_conversion_intelligence_"><span style="font-weight: 400; color: #000000;"><strong>What
+                            Is Conversion
+                            Intelligence?</strong></span></a><span style="font-weight: 400;"> – Ready for a whole new
+                    approach to optimization? Learn how advances in data technology
+                    have created an opportunity for you to seriously level up your marketing.</span>
+            </p>
+            <p><a href="#conversion_intelligence_loop"><span style="font-weight: 400; color: #000000;"><strong>The
+                            Conversion
+                            Intelligence Loop</strong></span></a> <span style="font-weight: 400;"> – Conversion
+                    intelligence is an active, iterative process where you combine your
+                    marketing know-how with the analytical power of AI. Not just once, but over and over again.</span>
+            </p>
+            <p>Your best hope for cutting through the noise is optimization—finding ways to incrementally improve
+                your campaigns and
+                create higher-converting experiences. But for lots of businesses, that’s easier said than done.</p>
+
+            <p> <a href="#____the_loop__learn"><span style="font-weight: 400; color: #000000;"><strong>The Loop:
+                            Learn</strong></span></a> <span style="font-weight: 400;"> – At the beginning of the
+                    conversion intelligence process, you’ll explore actionable
+                    insights (based on predictive, machine-validated data) that will help you understand what makes your
+                    audience
+                    convert.</span></p>
+            <p>
+                <a href="#____the_loop__build"><span style="font-weight: 400; color: #000000;"><strong>The Loop:
+                            Build</strong></span></a> <span style="font-weight: 400;"> – Informed by data insights and
+                    with the support of AI-powered tools, you can
+                    confidently assemble higher-converting digital experiences—before your campaign even
+                    launches.</span>
+            </p>
+
+            <p><a href="#____the_loop__optimize"><span style="font-weight: 400; color: #000000;"><strong>The Loop:
+                            Optimize</strong></span></a> <span style="font-weight: 400;"> – It’s time to turn things
+                    over to the machine. Use a conversion intelligence tool to
+                    automatically optimize the conversion journey and generate new, personalized insights, enabling you
+                    to start the
+                    process from the beginning.</span>
+            </p>
+
+        </div>
+    </div>
+
+    <div id="body4">
+        <div id="hadingdiv">
+            <h2>What Is Conversion Intelligence? </h2>
+        </div>
+        <div id="2pdiv">
+            <p>Simply put, <strong><a href="https://unbounce.com/conversion-intelligence/">conversion intelligence</a>
+                    is the
+                    combination of your marketing intelligence—your experience, your creativity, your intuition—with the
+                    analytical
+                    power of artificial intelligence</strong>.</p>
+            <p>It’s part of a <a
+                    href="https://unbounce.com/marketing-ai/conversion-intelligence-the-new-era-of-marketing/">broader
+                    trend</a> reshaping how businesses use technology to deliver better-performing digital experiences.
+                The internet
+                is getting crowded and it’s become increasingly difficult for marketers to reach (and convert) their
+                customers.
+                Small businesses need a better way to compete—and today, <strong>many recognize that <a
+                        href="https://www.drift.com/insider/learn/books-reports/state-of-marketing-ai/" rel="noopener"
+                        target="_blank">integrating AI into their marketing is critical to future success</a></strong>.
+            </p>
+
+        </div>
+    </div>
+    </div>
+    <div id="body5">
+        <img src="https://unbounce.com/photos/Desktop-Image-What-is-CI-Optimize-Pillar.jpg" alt="">
+    </div>
+    <!-- ---------------- -->
+
+    <div id="body6">
+        <!-- frist div -->
+        <div>
+            <p>Just think about <a href="https://support.google.com/google-ads/answer/6363750?hl=en" rel="noopener"
+                    target="_blank">Google’s Responsive Ads</a> or the <a
+                    href="https://www.facebook.com/business/news/good-questions-real-answers-how-does-facebook-use-machine-learning-to-deliver-ads"
+                    rel="noopener" target="_blank">AI tech behind Facebook Ads delivery</a>. These accessible tools are
+                analyzing
+                huge amounts of data to provide marketers with recommendations that make their content more relevant for
+                target
+                audiences. Instead of guessing what’ll work or waiting around for test results, businesses can
+                collaborate with AI
+                to optimize their campaigns in real-time—and that means more conversions.</p>
+
+            <p>There are plenty of SMB marketers who are already taking advantage. Daniel Parscale from CD Baby used
+                Unbounce’s
+                AI-powered optimization tools to get a <a
+                    href="https://unbounce.com/landing-pages/how-to-score-double-digit-conversion-rates-a-marketing-heros-journey/">double-digit
+                    lift in his conversion rates</a>. Mats Moy <a
+                    href="https://unbounce.com/landing-pages/smart-traffic-customer-story-moy-consulting/">quintupled
+                    his consulting
+                    business’s growth</a> by using machine learning to automatically optimize visitors’ path to
+                conversion.</p>
+            <p>But this is more than a new way of thinking about marketing or adding to expanding your technology stack.
+                <strong>Conversion intelligence is an active, iterative process in which the marketer and “the machine”
+                    work
+                    together to get better results than either could on their own</strong>.
+            </p>
+
+        </div>
+        <!-- second div -->
+        <div>
+            <div>
+                <h2>
+                    We have to stop thinking of our tools as tools, and start thinking of them as employees we can trust
+                    to do their
+                    jobs.
+                </h2>
+            </div>
+            <!-- last div -->
+            <div>
+                <div>
+                    <img src="https://unbounce.com/photos/CI_Manifesto_Profile_Daniel_Parscale.jpg" alt="">
+                </div>
+                <div>
+                    <p>Daniel parscale <br> Digital, CD Baby</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- ------------ -->
+    <!-- start -->
+    <div id="body7a">
+        <h2> The Conversion Intelligence Loop</h2>
+        <p>Now we know a bit about what conversion intelligence is—but how can you make it work for your campaigns?</p>
+       <p>The most effective applications of conversion intelligence follow a similar loop: learn, build, and optimize</p>
+       <img src="https://unbounce.com/photos/Desktop-Image-Loop-Steps-Horizontal-Optimize-Pillar.jpg" alt="">
+       <div id="b7box">
+        <div>
+            <h3>Lean</h3>
+            <p>Explore data trends and conversion patterns (in the form of insights) to learn what works best for your target audience.</p>
+        </div>
+
+        <div>
+            <h3>Build</h3>
+            <p>Use insights to inform your creative process and build higher-converting campaigns, right from the start.</p>
+        </div>
+
+        <div>
+            <h3>Optimize</h3>
+            <p>Work with AI to automatically optimize your content and deliver the most relevant experiences to each visitor.</p>
+        </div>
+       </div>
+       <p>Imagine you’re launching a campaign to get people signed up for a trial of your software.</p>
+    <p>First, you <strong>learn</strong> how to create higher-performing content by researching machine-derived insights
+        related to your audience. Next, you <strong>build</strong> your campaign assets (like ads and landing pages) using
+        those insights and often with assistance from the machine itself. Finally, you allow the machine to
+        <strong>optimize</strong> your campaign based on incoming data while simultaneously generating new insights—allowing
+        you to start the process over again.</p>
+       <p>
+        That’s an important point. Conversion intelligence isn’t a process you apply once, or only when you’re first building
+        your marketing assets. To maximize your conversions,
+       </p>
+       <p>
+        Below, we’ll explore each of these three steps in closer detail.
+       </p>
+    </div>
+      
+    <!-- end -->
+    <div id="body2">
+        <div id="imgdiv">
+            <img src="https://unbounce.com/wp-content/webp-express/webp-images/doc-root/photos/Victoria-Harkes-headshot.png.webp"
+                alt="">
+        </div>
+        <div id="pdiv">
+            <p>The Design Assistant makes it so I don’t need to look at competitors, do the research, and can trust
+                that
+                you’re going
+                to tell me what’s going to work.</p>
+            <p>Zoe Alexander, Marketing Project Manager</p>
+            <p>P A N T H E O N</p>
+        </div>
+    </div>
+    <div id="body3">
+        <h3>See how Smart Builder gets you more conversions</h3>
+        <button>Learn more</button>
+    </div>
+    </div>
+    <!-- skiped section -->
+      <div class="link">
+        <h4>related</h4>
+        <a href="#">What is Conversion Intelligence</a>
+        <a href="#">Conversion Intelligence--The new Era of Marketing </Nav></a>
+      </div>
+
+      <div class="oli">
+          <div class="olidiv">
+            <h3>Oli Gardner: "The Champion is a Lie"</h3>
+            <p>Hey, it’s Oli again. Throughout this guide, you’ll find some of my additional thoughts in callout boxes like this one.
+            (Just look for the dark background.)</p>
+            <p>
+                Until now, the standard practice of marketing optimization was to build and launch your campaign, see how it performs,
+                do some research and analysis, then come up with a hypothesis for an A/B test. The goal is to find a “champion”—the
+                highest-converting version of whatever you’re testing, whether it’s an ad, email, or landing page.
+            </p>
+          
+            <p>
+                To me, there are some major problems with this approach.
+            </p>
+            <div class="boxes">
+              
+                <div>
+                    <h3>It Takes Way, Way Too Long</h3>
+                    <p>Ideally, an A/B test will take about three weeks to complete—but if you’re not getting enough traffic, it could be
+                    months, or longer.</p>
+                </div>
+               
+                <div>
+                    <h3>It’s Usually Not Definitive</h3>
+                    <p>The most common outcome for an A/B test is a “conversion flatline.” Neither variant proves to be significantly better
+                    than the other.</p>
+                </div>
+
+                <div>
+                    <h3>It Costs You Conversions</h3>
+                    <p>Not every visitor is the same. When you choose a champion, you’re losing all of the people who would only convert on the
+                    other variant.</p>
+                </div>
+
+            </div>
+        </div>
+      </div>
+
+</body>
+
+</html>
