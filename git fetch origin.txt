@@ -1,2 +1,0 @@
-git fetch origin
-git checkout 'fw19_1304_day-2'
