@@ -72,5 +72,6 @@
   h3{
     color: blue;
   }
-
- 
+  a, u {
+    text-decoration: none;
+  }
