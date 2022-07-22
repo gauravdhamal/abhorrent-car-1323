@@ -365,14 +365,17 @@ width: 80%;
 
 }
 
-#p_peter_mid_screen{
-    display: none;
-}
 
-#p_connectTools_midscreen{
-    display: none;
-}
 
+@media only screen and (min-width: 800px){
+    #p_peter_mid_screen{
+        display: none;
+    }
+    
+    #p_connectTools_midscreen{
+        display: none;
+    }
+}
 
 
 

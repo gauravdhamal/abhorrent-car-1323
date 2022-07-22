@@ -1,13 +1,12 @@
 
-@media only screen and (min-width: 200px) and (max-width: 750px){
+@media only screen and (min-width: 200px) and (max-width: 800px){
     .p_container{
-        border: 20px solid red;
         display: block;
     }
 
     #p_connectTools{
         width: 100%;
-        border: 1px solid red;
+        
         display: none;
     
 
