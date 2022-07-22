@@ -1,3 +1,3 @@
-import navbar from "../dependency/import.js";
+// import navbar from "../dependency/import.js";
 
-document.querySelector(".h_header").innerHTML = navbar();
+// document.querySelector(".h_header").innerHTML = navbar();

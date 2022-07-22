@@ -1,3 +1,17 @@
+button {
+  margin: 10px auto auto 65px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  font-style: normal;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
 .buttons {
   position: relative;
   display: inline-block;
@@ -25,13 +39,13 @@
   height: 48%;
   transform: scaleY(0);
   transform-origin: top;
-  transition: transform 450ms;
+  transition: transform 100ms;
 }
 
 .buttons:hover span:nth-child(1) {
   transform: scaleY(1);
   transform-origin: bottom;
-  transition: transform 450ms;
+  transition: transform 100ms;
   transition-delay: 0s;
 }
 
@@ -40,10 +54,11 @@
   transform-origin: top;
 }
 
+/* last */
 .buttons:not(:hover) span:nth-child(1) {
   transform: scaleY(0);
   transform-origin: bottom;
-  transition-delay: 1.6s;
+  transition-delay: 1.4s;
 }
 
 .buttons span:nth-child(2) {
@@ -53,14 +68,14 @@
   height: 40%;
   transform: scaleY(0);
   transform-origin: top;
-  transition: transform 450ms;
+  transition: transform 100ms;
 }
 
 .buttons:hover span:nth-child(2) {
   transform: scaleY(1);
   transform-origin: bottom;
-  transition: transform 450ms;
-  transition-delay: 1.6s;
+  transition: transform 100ms;
+  transition-delay: 0.4s;
 }
 
 .buttons:not() span:nth-child(2) {
@@ -68,6 +83,7 @@
   transform-origin: top;
 }
 
+/* first */
 .buttons:not(:hover) span:nth-child(2) {
   transform: scaleY(0);
   transform-origin: bottom;
@@ -87,8 +103,8 @@
 .buttons:hover span:nth-child(3) {
   transform: scaleX(1);
   transform-origin: right;
-  transition: transform 450ms;
-  transition-delay: 1.2s;
+  transition: transform 100ms;
+  transition-delay: 0.3s;
 }
 
 .buttons:not() span:nth-child(3) {
@@ -96,10 +112,11 @@
   transform-origin: left;
 }
 
+/* second */
 .buttons:not(:hover) span:nth-child(3) {
   transform: scaleX(0);
   transform-origin: right;
-  transition-delay: 0.4s;
+  transition-delay: 0.1s;
 }
 
 .buttons span:nth-child(4) {
@@ -115,8 +132,8 @@
 .buttons:hover span:nth-child(4) {
   transform: scaleY(1);
   transform-origin: top;
-  transition: transform 450ms;
-  transition-delay: 0.8s;
+  transition: transform 100ms;
+  transition-delay: 0.2s;
 }
 
 .buttons:not() span:nth-child(4) {
@@ -124,10 +141,11 @@
   transform-origin: bottom;
 }
 
+/* third */
 .buttons:not(:hover) span:nth-child(4) {
   transform: scaleY(0);
   transform-origin: top;
-  transition-delay: 0.8s;
+  transition-delay: 0.5s;
 }
 
 .buttons span:nth-child(5) {
@@ -143,8 +161,8 @@
 .buttons:hover span:nth-child(5) {
   transform: scaleX(1);
   transform-origin: left;
-  transition: transform 450ms;
-  transition-delay: 0.4s;
+  transition: transform 100ms;
+  transition-delay: 0.1s;
 }
 
 .buttons:not() span:nth-child(5) {
@@ -152,8 +170,9 @@
   transform-origin: right;
 }
 
+/* fourth */
 .buttons:not(:hover) span:nth-child(5) {
   transform: scaleX(0);
   transform-origin: left;
-  transition-delay: 1.2s;
+  transition-delay: 0.9s;
 }
