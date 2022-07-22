@@ -599,3 +599,723 @@
   margin: auto;
   color: white;
 }
+
+/*-----------Media Queries Medium screens----------*/
+@media all and (min-width: 580px) and (max-width: 992px) {
+  /*-------------------- sem_main1 Part ------------------ */
+
+  #sem_main1 {
+    width: 90%;
+    height: 100%;
+    padding: 40px 10px;
+  }
+
+  #sem_main1 > #sem_main1_div1 {
+    width: 40%;
+    height: max-content;
+  }
+
+  #sem_main1 > #sem_main1_div1 > h1 {
+    font-size: 50px;
+  }
+
+  #sem_main1 > #sem_main1_div1 > p {
+    font-size: 16px;
+  }
+
+  #sem_main1 > #sem_main1_div1 > p:last-child {
+    font-size: 8px;
+    margin-bottom: 40px;
+  }
+
+  #sem_main1 > #sem_main1_div1 > button {
+    width: max-content;
+    font-size: 16px;
+    padding: 25px 10px;
+    margin: 10px auto 10px auto;
+  }
+
+  #sem_main1 > #sem_main1_div2 {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sem_main1 > #sem_main1_div2 > img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  /*----------------sem_main2---------------*/
+  #sem_main2 {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  #sem_main2 > h1 {
+    font-size: 52px;
+    line-height: 72px;
+  }
+
+  #sem_main2 > #sem_main2_div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #sem_main2 > #sem_main2_div > div {
+    width: 45%;
+    display: flex;
+  }
+
+  #sem_main2 > #sem_main2_div > div > div {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  #sem_main2 > #sem_main2_div > div > div > h2 {
+    font-size: 25px;
+    line-height: 36px;
+  }
+
+  #sem_main2 > #sem_main2_div > div > div > h2 ~ p {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  /* ------------- sem_main3 Part ------------- */
+  #sem_main3 {
+    width: 90%;
+    margin: 60px;
+  }
+
+  #sem_main3 > h1 {
+    font-size: 72px;
+    line-height: 90px;
+  }
+
+  #sem_main3 > h1 ~ p {
+    font-size: 20px;
+    line-height: 32px;
+    margin: 40px auto;
+  }
+
+  #sem_main3 > #sem_main3_div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #sem_main3 > #sem_main3_div > div {
+    width: 45%;
+    display: flex;
+  }
+
+  #sem_main3_hr {
+    margin-top: -50px;
+  }
+
+  /*------------sem_main4 Part----------------*/
+
+  .sem_main4 > h1 {
+    font-size: 62px;
+    line-height: 70px;
+  }
+
+  .sem_main4 > p {
+    margin: auto;
+    width: 85%;
+    font-size: 25px;
+  }
+
+  /*------------sem_main5 Part-----------------*/
+  #sem_main5 {
+    width: 90%;
+    padding: 40px 0px;
+    margin: 30px auto;
+  }
+
+  #sem_main5 > #sem_main5_div1 {
+    width: 50%;
+  }
+
+  #sem_main5 > #sem_main5_div1 > div {
+    width: auto;
+  }
+
+  #sem_main5 > #sem_main5_div1 > div > h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  #sem_main5 > #sem_main5_div1 > div > p {
+    font-size: 18px;
+  }
+
+  #sem_main5_div2 {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sem_main5_div2 > img {
+    width: 100%;
+    height: auto;
+  }
+
+  /*-------------sem_main6--------------*/
+  .sem_main6 {
+    justify-content: space-evenly;
+    gap: 10%;
+  }
+
+  .sem_main6_div1 {
+    width: 20%;
+  }
+
+  .sem_main6_div1 > img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .sem_main6_div2 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .sem_main6_div2 > img {
+    width: 150px;
+    height: auto;
+  }
+
+  .sem_main6_div2 > h2 {
+    font-size: 30px;
+  }
+
+  .sem_main6_div2 > p {
+    margin-left: 0px;
+  }
+
+  /*------------sem_main7-------------*/
+
+  .sem_main7 {
+    gap: 10%;
+  }
+
+  .sem_main7_div1 {
+    width: 20%;
+  }
+
+  .sem_main7_div1 > img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .sem_main7_div2 {
+    width: 70%;
+  }
+
+  .sem_main7_div2 > h2 {
+    font-size: 26px;
+    line-height: 41px;
+  }
+
+  /*--------------sem_main8--------------*/
+
+  #sem_main8_div2 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #sem_main8_div2 > img {
+    width: 100%;
+    height: 500px;
+  }
+
+  /*-----------sem_main9---------------*/
+
+  #sem_main9_div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*-----------sem_main10---------------*/
+
+  #sem_main10 {
+    gap: 5%;
+  }
+
+  #sem_main10_div2 {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sem_main10_div2 > img {
+    width: 100%;
+    height: 500px;
+  }
+
+  #sem_main10_div1 > img {
+    width: 55%;
+    width: 150px;
+    height: 150px;
+  }
+
+  #sem_main10_div2 > h2 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  /*-----------sem_main11---------------*/
+
+  #sem_main11_div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sem_main11_div2 > img {
+    height: auto;
+  }
+
+  /*----------------sem_main12-----------------*/
+
+  #sem_main12 > #sem_main12_div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sem_main12 > #sem_main12_div2 > img {
+    height: auto;
+  }
+}
+
+/*-----------Media Queries small screens----------*/
+@media all and (min-width: 320px) and (max-width: 579px) {
+  /*-------------------- sem_main1 Part ------------------ */
+
+  #sem_main1 {
+    flex-direction: column-reverse;
+    width: 95%;
+    height: 100%;
+    padding: 40px 10px;
+  }
+
+  #sem_main1 > #sem_main1_div1 {
+    width: 100%;
+    height: max-content;
+  }
+
+  #sem_main1 > #sem_main1_div1 > h1 {
+    width: 100%;
+  }
+
+  #sem_main1 > #sem_main1_div1 > p {
+    font-size: 16px;
+  }
+
+  #sem_main1 > #sem_main1_div1 > p:last-child {
+    font-size: 8px;
+    margin-bottom: 40px;
+  }
+
+  #sem_main1 > #sem_main1_div1 > button {
+    font-size: 16px;
+    padding: 25px 20px;
+    margin: 10px auto 10px auto;
+  }
+
+  #sem_main1 > #sem_main1_div2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sem_main1 > #sem_main1_div2 > img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  /*----------------sem_main2---------------*/
+  #sem_main2 {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  #sem_main2 > h1 {
+    font-size: 52px;
+    line-height: 72px;
+  }
+
+  #sem_main2 > #sem_main2_div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #sem_main2 > #sem_main2_div > div {
+    width: 90%;
+    display: flex;
+  }
+
+  #sem_main2 > #sem_main2_div > div > div {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  #sem_main2 > #sem_main2_div > div > div > h2 {
+    font-size: 25px;
+    line-height: 36px;
+  }
+
+  #sem_main2 > #sem_main2_div > div > div > h2 ~ p {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  /* ------------- sem_main3 Part ------------- */
+  #sem_main3 {
+    width: 96%;
+    margin: 60px auto;
+  }
+
+  #sem_main3 > h1 {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    font-size: 52px;
+    line-height: 60px;
+  }
+
+  #sem_main3 > h1 ~ p {
+    font-size: 20px;
+    line-height: 32px;
+    margin: 40px auto;
+  }
+
+  #sem_main3 > #sem_main3_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #sem_main3 > #sem_main3_div > div {
+    width: 100%;
+    display: flex;
+  }
+
+  #sem_main3_hr {
+    margin-top: -50px;
+  }
+
+  /*------------sem_main4 Part----------------*/
+
+  .sem_main4 > h1 {
+    font-size: 52px;
+    line-height: 50px;
+  }
+
+  .sem_main4 > p {
+    margin: auto;
+    width: 85%;
+    font-size: 16px;
+  }
+
+  /*------------sem_main5 Part-----------------*/
+  #sem_main5 {
+    width: 95%;
+    flex-direction: column;
+    width: 1200px;
+    padding: 40px 0px;
+    margin: 30px auto;
+  }
+
+  #sem_main5 > #sem_main5_div1 {
+    width: 35%;
+    margin: 0px;
+  }
+
+  #sem_main5 > #sem_main5_div1 > div > h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  #sem_main5 > #sem_main5_div1 > div > p {
+    font-size: 18px;
+  }
+
+  #sem_main5_div2 {
+    width: 30%;
+    margin: auto;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sem_main5_div2 > img {
+    width: 100%;
+    height: auto;
+  }
+
+  /*-------------sem_main6--------------*/
+  .sem_main6 {
+    justify-content: space-evenly;
+    gap: 10%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .sem_main6_div1 {
+    width: 100%;
+  }
+
+  .sem_main6_div1 > img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .sem_main6_div2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .sem_main6_div2 > img {
+    width: 150px;
+    height: auto;
+  }
+
+  .sem_main6_div2 > h2 {
+    font-size: 30px;
+  }
+
+  .sem_main6_div2 > p {
+    margin-left: 0px;
+  }
+
+  /*------------sem_main7-------------*/
+
+  .sem_main7 {
+    flex-direction: column-reverse;
+    gap: 10%;
+  }
+
+  .sem_main7_div1 {
+    width: 100%;
+  }
+
+  .sem_main7_div1 > img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .sem_main7_div2 {
+    width: 100%;
+  }
+
+  .sem_main7_div2 > h2 {
+    font-size: 26px;
+    line-height: 41px;
+  }
+
+  /*--------------sem_main8--------------*/
+  #sem_main8 {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 30px 0px;
+  }
+
+  #sem_main8 > #sem_main8_div1 {
+    width: 100%;
+  }
+
+  #sem_main8 > #sem_main8_div1 > div > h2 {
+    display: flex;
+    align-items: center;
+    font-size: 30;
+    font-weight: 400;
+    line-height: 36px;
+    color: #303030;
+    font-style: normal;
+    margin-top: 20px;
+  }
+
+  #sem_main8 > #sem_main8_div1 > div > p {
+    box-sizing: border-box;
+    padding-left: 65px;
+    font-size: 18;
+    font-weight: 300;
+    line-height: 28px;
+    color: #919191;
+    font-style: normal;
+  }
+
+  #sem_main8 > #sem_main8_div1 > div > button {
+    margin: 20px auto auto 65px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    font-style: normal;
+    border: none;
+  }
+
+  #sem_main8_div2 {
+    width: 90%;
+  }
+
+  #sem_main8_div2 > img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*-----------sem_main9---------------*/
+
+  #sem_main9 {
+    flex-direction: column-reverse;
+  }
+
+  #sem_main9 > #sem_main9_div1 {
+    width: 100%;
+  }
+
+  #sem_main9_div2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*-----------sem_main10---------------*/
+
+  #sem_main10 {
+    gap: 5%;
+    flex-direction: column-reverse;
+  }
+
+  #sem_main10_div1 {
+    width: 100%;
+  }
+
+  #sem_main10_div1 > div {
+    width: 350px;
+  }
+
+  #sem_main10_div2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sem_main10_div2 > img {
+    width: 100%;
+    height: 500px;
+  }
+
+  #sem_main10_div1 > img {
+    width: 55%;
+    width: 150px;
+    height: 150px;
+  }
+
+  #sem_main10_div2 > h2 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  /*-----------sem_main11---------------*/
+
+  #sem_main11 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #sem_main11 > #sem_main11_div1 {
+    width: 100%;
+  }
+
+  #sem_main11_div2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sem_main11_div2 > img {
+    height: auto;
+  }
+
+  /*----------------sem_main12-----------------*/
+
+  #sem_main12 {
+    flex-direction: column-reverse;
+  }
+
+  #sem_main12 > #sem_main12_div1 {
+    width: 100%;
+  }
+
+  #sem_main12 > #sem_main12_div2 {
+    display: flex;
+    margin: auto;
+  }
+
+  #sem_main12 > #sem_main12_div1 > h1 {
+    font-size: 35px;
+    line-height: 45px;
+    margin-top: -300px;
+  }
+
+  #sem_main12 > #sem_main12_div1 > p {
+    font-size: 14px;
+  }
+
+  #sem_main12 > #sem_main12_div2 > img {
+    width: 100%;
+    height: 500px;
+    margin: 0px auto;
+  }
+}
