@@ -57,6 +57,7 @@
   margin: 40px auto;
   margin-bottom: 15px;
   cursor: pointer;
+  margin-left: 0%;
 }
 
 #se_main1 > #se_main1_div1 > button:hover {

@@ -8,7 +8,7 @@ function MyFun(event){
   let chkPass=localStorage.getItem("pas");
  
   if(email==chkEmail && password==chkPass){
-window.location.href="https://unsplash.com/"
+window.location.href="index.html"
   }else{
     alert("Email and Pass is incorrect");
   }

@@ -1,6 +1,8 @@
 import {navbar, footer} from '../dependency/navbar.js'
 
 document.querySelector('#body').innerHTML = navbar()
+
+// document.querySelector('#bodybuilder').innerHTML = navbar()
 document.querySelector('footer').innerHTML = footer()
 
 document.querySelector('.smartbuilder').addEventListener('click',function(){
@@ -66,4 +68,10 @@ document.querySelector('#login').addEventListener('click',function(){
 
 document.querySelector('.h_free-trial-btn').addEventListener('click',function(){
     window.location.href = `pricing.html`
+})
+
+
+
+document.querySelector('#navbar').addEventListener('click',function(){
+    window.location.href = 'contact.html'
 })

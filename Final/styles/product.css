@@ -4,10 +4,6 @@
 .p_container{
     display: flex;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
     background-color: #303030;
 }
 
@@ -69,7 +65,6 @@ button{
     text-align: center;
 }
 #p_btn1{
-    margin-top: -20px;
     color: #303030;
     border-radius: 2px;
     background-color: #fff;
@@ -87,7 +82,9 @@ button{
     border-radius: 2px;
     background-color: #626262 ; 
 }
-
+.space{
+    padding: 3%;
+}
 
 
 h2{
@@ -120,7 +117,7 @@ margin: auto ;
     font-family: 'Barlow Semi Condensed', 
     sans-serif;
     color: black;
-    font-size: 5em;
+    font-size: 3.5em;
 }
 #p_para2>p {
     text-align: center;
@@ -134,6 +131,9 @@ margin: auto ;
 #p_peter{
     width: 100%;
 }
+#p_peter img{
+    width: 100%;
+}
 #p_seedetail{
     text-align: center;
     margin-bottom: 20px;
@@ -144,7 +144,10 @@ margin: auto ;
     cursor: pointer;
 
 }
-
+body{
+    margin: 0%;
+    padding: 0%;
+}
 
 .p_container1{
     display: flex;
@@ -224,20 +227,32 @@ width: 80%;
     padding: 20px;
     gap: 25px;
 }
-.p_box1>h3{
+.p_box1 svg{
+    color: blue;
+    font-size: 50px;
+    margin-bottom: 10%;
+}
+.p_box1 h3{
     font-family: 'Barlow Semi Condensed', 
     sans-serif;
     color: black;
     font-size: 2em;
     font-weight: 400;
-
+    margin-bottom: 10%;
 }
-.p_box1>p{
+.p_box1 p{
     font-family: 'Barlow Semi Condensed', 
     sans-serif;
     color: #626262;
+    margin-bottom: 10%;
 
 }
+#p_button{
+    background-color: aliceblue;
+    
+    
+}
+
 .p_container_blue{
     display: flex;
     flex-direction: column;
@@ -268,12 +283,12 @@ width: 80%;
 #btn_start{
     padding: 25px;
     background-color: #fff;
-    color: #03f;
-    border-width: 2.5px;
-    border-color: #fff;
+    color: blue;
+    border: 3px solid white;
     font-size: x-large;
-
+    margin: auto;
 }
+
 #btn_start:hover{
     background-color: transparent;
     color: white;

@@ -13,7 +13,7 @@ if(Fname=="" && ema=="" && pas==""){
   localStorage.setItem("ema",ema);
   localStorage.setItem("pas",pas);
   alert("Register Succesfully")
-  window.location.href="main.html"
+  window.location.href="login.html"
 }
  
 

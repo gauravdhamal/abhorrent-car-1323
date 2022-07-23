@@ -150,6 +150,7 @@ input:checked + .slider::before {
   font-weight: 600;
   color: #ffffff;
   text-decoration: none;
+  text-align: center;
 }
 
 .button:hover {

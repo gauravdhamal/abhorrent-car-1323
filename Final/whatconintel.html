@@ -5,17 +5,16 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="styles/index.css">
+  <title>What is conversion Intelligence?</title>
+  <!-- <link rel="stylesheet" href="styles/index.css"> -->
   <link rel="icon" href="https://unbounce.com/photos/cropped-unbounce-favicon-2-32x32.png" sizes="32x32">
 
   <style>
-    div {
-      /* border:  2px solid black; */
-      /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    body{
+      margin: 0%;
+      padding: 0%;
     }
-
-    button {
+    button{
       border: none;
       box-sizing: border-box;
       padding: 10px;
@@ -25,9 +24,10 @@
       text-align: center;
     }
 
-    #top {
+    #top{
       margin: auto;
-      width: 95%;
+      margin-top: -5px;
+      width: 100%;
       /* border: 2px solid black; */
       display: flex;
       flex-direction: row;
@@ -38,7 +38,7 @@
       color: white;
     }
 
-    #top>div {
+    #top>div{
       /* border: 2px solid red; */
       display: flex;
       flex-direction: column;
@@ -46,8 +46,19 @@
       align-items: center;
       align-content: center;
     }
-
-    #btndiv {
+      #top>:first-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-content: flex-start;
+        padding: 10%;
+      }
+       #top>:first-child>p{
+        font-size: 18px;
+        line-height: 25px;
+       }
+    #btndiv{
       display: flex;
       flex-direction: row;
       gap: 10px;
@@ -63,11 +74,11 @@
       background-color: #303030;
     }
 
-    #parttwo>img {
+    #parttwo>img{
       width: 100%;
     }
 
-    #body1 {
+    #body1{
       margin: auto;
       width: 95%;
       /* border: 2px solid black; */
@@ -79,9 +90,9 @@
 
     }
 
-    #bodyfix {
+    #bodyfix{
       margin: auto;
-      width: 70%;
+      width: 75%;
       /* border: 2px solid red; */
       display: flex;
       flex-direction: column;
@@ -90,7 +101,7 @@
       align-content: center;
     }
 
-    #fixheading {
+    #fixhading{
       width: 100%;
       display: flex;
       flex-direction: row;
@@ -99,10 +110,11 @@
       align-content: center;
       text-align: center;
       color: #303030;
-      font-size: 72px;
+      font-size: 30px;
+      /* font-size: 30px; */
     }
 
-    #fixp {
+    #fixp{
       width: 100%;
       display: flex;
       flex-direction: row;
@@ -112,73 +124,87 @@
       text-align: center;
       font-size: 18px;
       color: #303030;
+      line-height: 25px;
     }
 
-    #fixcontainer {
+    #fixcontainer{
       width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
       align-items: center;
       align-content: center;
-      gap: 20px;
+      gap: 10px;
     }
 
-    #fixcontainer>.box {
-      width: 100%;
+    #fixcontainer>.box{
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      align-items: center;
-      align-content: center;
+      align-items: flex-start;
+      align-content: flex-start;
     }
 
-    #fixcontainer>.box>h4 {
-      
+    #fixcontainer>.box>h4{
+
       font-size: 30px;
       color: #303030;
+      
     }
-      #fixcontainer>.box>p{
-        color: #303030;
-        font-size: 18px;
 
-      }
-    #body2 {
+    #fixcontainer>.box>p{
+      color: #303030;
+      font-size: 18px;
+      line-height: 25px;
+
+    }
+
+    #body2{
       width: 70%;
       margin: auto;
       /* border:  2px solid black; */
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: flex-start;
-      align-content:flex-start;
-      gap: 20px;
+      align-content: flex-start;
+      gap: 10px;
       /* text-align: left; */
     }
 
-    #body2>div {
+    #body2>div{
       /* border: 2px solid black; */
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      align-content: center;
+      align-content: flex-start;
     }
-      #body2>#imgdiv{
-       padding-top: 5%;
-      }
-    #body2>#imgdiv>img {
+
+    #body2>#imgdiv{
+      display: flex;
+      justify-content: space-evenly ;
+      align-items: flex-start;
+      align-content: flex-start;
+      /* padding-top: 5%; */
+    }
+
+    #body2>#imgdiv>img{
       width: 100%;
 
     }
 
-    #body2>#pdiv {
-      font-size: 30px;
+    #body2>#pdiv{
+      display: flex;
+      justify-content: space-evenly ;
+      align-items: flex-start;
+      align-content: flex-start;
+      font-size: 20px;
       color: #303030;
 
     }
 
-    #body3 {
+    #body3{
       width: 55%;
       margin: auto;
       /* border: 2px solid black; */
@@ -188,11 +214,11 @@
       align-items: center;
       align-content: center;
       font-size: 30px;
-      color:#303030 ;
+      color: #303030;
       text-align: center;
     }
 
-    #body4 {
+    #body4{
       width: 70%;
       margin: auto;
       display: flex;
@@ -201,25 +227,29 @@
       align-items: center;
       align-content: center;
     }
-      #body4>#hadingdiv{
-        font-size: 30px;
-        color: #303030;
-      }
-      #body4>#tpdiv{
-        color: #303030;
-        font-size: 18px;
-        text-align: center;
-      }
-    #body5 {
+
+    #body4>#hadingdiv{
+      font-size: 30px;
+      color: #303030;
+    }
+
+    #body4>#tpdiv{
+      color: #303030;
+      font-size: 18px;
+      text-align: center;
+      line-height: 30px;
+    }
+
+    #body5{
       width: 60%;
       margin: auto;
     }
 
-    #body5>img {
+    #body5>img{
       width: 100%;
     }
 
-    #body6 {
+    #body6{
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -227,23 +257,33 @@
       align-content: center;
       background-color: #303030;
       color: white;
+      gap: 10px;
       /* text-align: center; */
     }
-     #body6>:first-child{
-      width: 60%;
-     }
-      #body6>div>h2{
-        text-align: center;
-        font-size: 30px;
-      }
-       #body6>:nth-child(2){
-      width: 60%;
-     }
-      #body6>:nth-child(2)>p{
-        text-align: center;
-        font-size: 18px;
-      }
-    #body6>:nth-child(3) {
+
+    #body6>:first-child{
+      width: 40%;
+      font-size: 30px;
+      text-align: center;
+      /* border: 2px solid red; */
+    }
+
+    /* #body6>div>h2{
+      text-align: center;
+      font-size: 30px;
+    } */
+
+    #body6>:nth-child(2){
+      width: 50%;
+    }
+
+    #body6>:nth-child(2)>p{
+      text-align: center;
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    #body6>:nth-child(3){
       width: 95%;
       /* border: 2px solid red; */
       display: flex;
@@ -251,34 +291,47 @@
       justify-content: space-evenly;
       align-items: center;
       align-content: center;
+      gap: 10px;
     }
-     #body6>:nth-child(3)>div{
+
+    #body6>:nth-child(3)>div{
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
       align-content: center;
-     }
+    }
 
-    #body6>:nth-child(3)>:first-child {
+    #body6>:nth-child(3)>:first-child{
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       align-items: flex-start;
       align-content: flex-start;
-      color:#fffff2;
+      color: #fffff2;
     }
+
     #body6>:nth-child(3)>:first-child>h4{
-      font-size: 25px;
+      font-size: 30px;
     }
+
     #body6>:nth-child(3)>:first-child>p{
-      font-size: 18px;
+      font-size: 20px;
+      line-height: 30px;
     }
-    #body6>:nth-child(3)>div+div>img {
+ #body6>:nth-child(3)>:last-child{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      align-content: flex-start;
+      
+    }
+    #body6>:nth-child(3)>:last-child>img{
       width: 100%;
     }
 
-    #body7 {
+    #body7{
       width: 40%;
       margin: auto;
       display: flex;
@@ -287,52 +340,65 @@
       align-items: center;
       align-content: center;
       text-align: center;
+      gap: 10px;
     }
-     #body7>h3{
-      color: #303030;
-      font-size: 30px;
-     }
-     #body7>p{
-      font-size: 18px;
-      color: #303030;
-     }
-      #body7>button{
-        padding: 4%;
-        color: #FFFFFF;
-        font-size: 20px;
 
-      }
-    #body8 {
+    #body7>h3{
+      color: #303030;
+      font-size: 35px;
+    }
+
+    #body7>p{
+      font-size: 20px;
+      color: #303030;
+      line-height: 30px;
+    }
+
+    #body7>button{
+      padding: 4%;
+      color: #FFFFFF;
+      font-size: 20px;
+
+    }
+
+    #body8{
       width: 60%;
       margin: auto;
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
       align-items: center;
-      align-content:center;
-      gap: 20px;
+      align-content: center;
+      gap: 10px;
     }
 
-   
+
 
     #body8>:first-child{
       /* border: 2px solid black; */
-    
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       align-items: flex-start;
+       align-content: flex-start;
     }
- #body8>div>img {
+
+    #body8>:first-child>img{
       width: 100%;
     }
 
     #body8>:last-child{
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      font-size: 30px;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      align-content: flex-start;
+      font-size: 25px;
       color: #303030;
+      line-height: 30px;
     }
-    #body9 {
+
+    #body9{
       width: 100%;
       margin: auto;
       background-color: blue;
@@ -341,25 +407,32 @@
       justify-content: center;
       align-items: center;
       align-content: center;
+      padding-bottom: 2%;
     }
 
-    #body9>div {
-      width: 70%;
+    #body9>div{
+      width: 60%;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
       align-content: center;
       text-align: center;
-      color:#fffff2;
+      color: #fffff2;
+      gap: 10px;
     }
-         #body9>div>h3{
-          font-size: 35px;
-         }
-         #body9>div>p{
-          font-size: 18px;
-         }
-    #body9>div>button {
+
+    #body9>div>h3{
+      font-size: 35px;
+      
+    }
+
+    #body9>div>p{
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    #body9>div>button{
       color: blue;
       background-color: white;
       border: none;
@@ -367,10 +440,20 @@
       padding: 20px;
       font-size: 20px;
     }
+
   </style>
 </head>
 
 <body>
+  <a href="/contact.html" style="position: fixed;"><img
+    style="width: 130%"
+    src="https://i.postimg.cc/Y0CCpkRL/Screenshot-2022-07-23-at-19-55-54-Ecommerce.png%22"
+    alt=""
+  /></a>
+
+  
+
+  
   <div id="top">
     <div id="partone">
       <h3>--- UNBOUNCE CONVERSION INTELLIGENCE</h3>
@@ -534,6 +617,13 @@
       <button>Strat my free trial</button>
     </div>
   </div>
+
+  <img id="footer"
+      style="width: 100%"
+      src="https://i.postimg.cc/tCk5gzzK/Screenshot-2022-07-23-at-20-30-22-Ecommerce.png"
+      alt=""
+    />
 </body>
+
 </html>
-  <script src="/scripts/link.js" type="module"></script>
+<script src="/scripts/link.js" type="module"></script>

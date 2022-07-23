@@ -48,6 +48,7 @@
   border: 2px solid rgb(0, 51, 255);
   margin: 20px auto;
   cursor: pointer;
+  margin-left: 0%;
 }
 
 #slg_main1 > #slg_main1_div1 > button:hover {
