@@ -88,7 +88,7 @@ input:checked + .slider::before {
 }
 
 #p_main2 {
-  width: 70%;
+  width: 65%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -149,6 +149,13 @@ input:checked + .slider::before {
   font-style: normal;
   font-weight: 600;
   color: #ffffff;
+  text-decoration: none;
+}
+
+.button:hover {
+  color: blue;
+  background-color: white;
+  transition: 0.4s;
 }
 
 .button ~ p {
@@ -229,22 +236,91 @@ input:checked + .slider::before {
   line-height: 19px;
 }
 
-#p_main3 {
-  text-align: center;
-}
-
 #p_main3 > div {
-  width: 50%;
+  width: 85%;
   margin: auto;
   display: flex;
-  gap: 20px;
+  gap: 50px 80px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin: 20px auto;
 }
 
 #p_main3 > div > p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#p_main3 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  color: #303030;
+}
+
+#p_main3 > h2 {
+  margin: 50px auto 50px auto;
+}
+
+.p_main3_p {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  color: #303030;
+}
+
+.p_main3_p::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: " ?";
+  background-color: rgb(203, 194, 194);
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+}
+
+#p_main3_butt {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  color: blue;
+  background-color: white;
+  border: 1px solid blue;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+#p_main3_butt:hover {
+  background-color: blue;
+  color: white;
+  transition: 0.5s;
+}
+
+#p_main4 {
+  text-align: center;
+}
+
+#p_main4 > h2 {
+  margin: 40px auto 40px auto;
+}
+
+#p_main4 > div {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+  gap: 20px;
 }
