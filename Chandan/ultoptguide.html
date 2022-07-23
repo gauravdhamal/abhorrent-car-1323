@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="https://unbounce.com/photos/cropped-unbounce-favicon-2-32x32.png" sizes="32x32">
+
+
+    <style>
+        div {
+            /* border:  2px solid black; */
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+        }
+
+        button {
+            border: none;
+            box-sizing: border-box;
+            padding: 10px;
+            font-size: 25px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+        }
+
+        #top {
+            margin: auto;
+            width: 95%;
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+            gap: 20px;
+            background-color: #303030;
+            color: #FFFFFF;
+        }
+
+        #top>div {
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: flex-start;
+        }
+
+        #top>:first-child {
+            padding-left: 20px;
+            width: 50%;
+        }
+
+        #top>:first-child>h1 {
+            font-size: 40px;
+        }
+
+        #top>:first-child>p {
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        #top>:last-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            align-content: flex-start;
+            height: 500px;
+        }
+
+
+        #parttwo>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .body1 {
+            margin: auto;
+            width: 95%;
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+
+        }
+
+        .bodyfix {
+            margin: auto;
+            width: 70%;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .fixhading {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: flex-start;
+            font-size: 30px;
+            color: #303030;
+
+        }
+
+        .fixp {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: flex-start;
+            color: #303030;
+            font-size: 18px;
+        }
+
+        /* .fixp>div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+
+        } */
+        .fiximg {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            align-content: flex-end;
+            /* border: 2px solid blue; */
+            text-align: end;
+        }
+
+        #fiximg {
+            width: 100%;
+        }
+
+
+        #fixcontainer {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+        }
+
+        #fixcontainer>.box {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+        }
+
+        #fixcontainer>.box>h4,
+        p {
+            width: 100%;
+        }
+
+        #body2 {
+            width: 70%;
+            margin: auto;
+            /* border:  2px solid black; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+            gap: 10px;
+        }
+
+        #body2>div {
+            /* border: 2px solid black; */
+        }
+
+        #body2>#imgdiv>img {
+            width: 100%;
+        }
+
+        #body2>#pdiv {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            font-size: 18px;
+            color: #303030;
+            line-height: 25px;
+
+        }
+
+        #body3 {
+            width: 55%;
+            margin: auto;
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            align-content: center;
+        }
+
+        #body4 {
+            width: 70%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: flex-start;
+        }
+
+        #body4>#hadingdiv {
+
+            font-size: 40px;
+            color: #303030;
+
+        }
+
+        #body4>#tpdiv {
+            font-size: 18px;
+            color: #303030;
+            line-height: 30px;
+        }
+
+
+
+        #body5 {
+            width: 60%;
+            margin: auto;
+        }
+
+        #body5>img {
+            width: 100%;
+        }
+
+        #body6 {
+            width: 70%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+            /* background-color: #303030; */
+            /* border: 2px solid black; */
+        }
+
+        #body6>:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            align-content: flex-start;
+            /* border: 2px solid blue; */
+            font-size: 18px;
+            color: #303030;
+            line-height: 30px;
+        }
+
+        #body6>:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+            /* border: 2px solid black; */
+        }
+
+        #body6>:nth-child(2)>:nth-child(1) {
+            font-size: 30px;
+            color: #303030;
+        }
+
+        #body6>:nth-child(2)>:nth-child(2) {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            color: #303030;
+            font-size: 18px;
+
+            /* border: 2px solid red; */
+        }
+
+        /* #body6>:nth-child(2)>:nth-child(2){
+            display: flex;
+            flex-direction: row;
+            border:  2px solid black;
+           } */
+
+
+        /* #body6>:nth-child(2)>:last-child {
+            border: 5px solid green;
+        } */
+
+        #body6>:nth-child(2)>:last-child>:first-child {
+            /* border: 5px solid black; */
+            width: 40%;
+        }
+
+        #body6>:nth-child(2)>:last-child>:first-child>img {
+            width: 100%;
+        }
+
+        /* #body6>:nth-child(2)>:last-child>:last-child {
+            border: 10px solid brown;
+        } */
+
+        #body7a {
+            width: 70%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            align-content: flex-start;
+            color: #303030;
+
+        }
+
+        #body7a>h2 {
+            font-size: 50px;
+        }
+
+        #body7a>p {
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+        #body7a>img {
+            width: 100%;
+        }
+
+        #body7a>#b7box {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-content: center;
+            align-items: center;
+            gap: 10px;
+            /* border: 2px solid red; */
+        }
+
+        #body7a>#b7box>div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: flex-start;
+            padding-left: 10px;
+            background-color: #f9f8f7;
+            color: #303030;
+        }
+
+        #body7a>#b7box>div>h3 {
+            font-size: 36px;
+        }
+
+        #body7a>#b7box>div>p {
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        .link {
+            width: 70%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: flex-start;
+            padding: 10px;
+
+        }
+
+        .link>h4 {
+            color: #303030;
+            font-size: 20px;
+        }
+
+        .link>p {
+            font-size: 50px;
+            line-height: 30px;
+        }
+
+        .oli {
+            width: 100%;
+            margin: auto;
+            /* background-color: #303030; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            /* color: white */
+        }
+
+        .bg {
+            background-color: #303030;
+        }
+
+        .bg2 {
+            background-color: #FFFFFF;
+        }
+
+        .bg3 {
+            background-color: #f9f8f7;
+        }
+
+        .cl {
+            color: #FFFFFF;
+        }
+
+        .cl2 {
+            color: #303030;
+        }
+
+        .fn1 {
+            font-size: 35px;
+        }
+
+        .fn2 {
+            font-size: 18px;
+            line-height: 35px;
+        }
+
+        .olidiv {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: flex-start;
+            /* color: white; */
+        }
+
+        .boxes {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            gap: 10px;
+            color: #303030;
+            background-color: #303030;
+        }
+
+        .boxes>div {
+            background-color: #f9f8f7;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+
+        }
+
+        .boxes>div>h3 {
+            font-size: 30px;
+            color: #303030;
+        }
+
+        .boxes>div>p {
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        .theloop {
+            margin: auto;
+            width: 100%;
+            /* border: #000000; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        /* .theloop>.olidiv {
+            color: black;
+        } */
+
+        .conversion {
+            width: 70%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: flex-start;
+        }
+
+        .conversion>img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top">
+        <div id="partone">
+            <h3>--- Marketer & Machine</h3>
+            <h1>The Conversion Intelligence Guide to Optimization</h1>
+            <p>
+                Old-school optimization just doesn’t cut it anymore. Learn how to pair your marketing know-how with
+                machine learning to
+                create your highest-performing campaigns ever.
+            </p>
+
+        </div>
+        <div id="parttwo">
+            <img src="https://unbounce.com/photos/Mobile-Image-Hero-Banner-Optimize-Pillar-Blank.jpg" alt="" />
+        </div>
+    </div>
+    <div class="body1">
+        <div class="bodyfix">
+            <div class="fixhading">
+                <h2>
+                    The Digital Landscape Has Never Been More Competitive
+                </h2>
+            </div>
+            <div class="fixp">
+                <p>It used to be easier for marketers to stand out online. (Heck, just <em>being online</em> gave you a
+                    big advantage
+                    over lots of your competitors.) But over the past decade, a wave of martech platforms has
+                    democratized the entire
+                    digital marketing process.
+                </p>
+                <p>The result? <strong>Now, everybody is doing the same thing</strong>.</p>
+                <p>Your best hope for cutting through the noise is optimization—finding ways to incrementally improve
+                    your campaigns and
+                    create higher-converting experiences. But for lots of businesses, that’s easier said than done.</p>
+
+                <p>“You should test that” has become one of the most irksome pieces of marketing advice I hear. Testing
+                    is great in
+                    theory, but unless you’re a large organization with huge traffic, expert knowledge, and some very
+                    deep pockets,
+                    you’re unlikely to see much success.</p>
+                <p><strong>So how can regular marketers get an optimization edge?</strong></p>
+
+                <p>At Unbounce, <strong>we’re championing a new approach called conversion intelligence</strong>, which
+                    addresses the
+                    challenges of optimization and makes it much easier to increase the conversion rates of your
+                    campaigns.</p>
+                <p>We used to say that simply having a landing page was enough to give you an edge over your
+                    competition, but it’s no
+                    longer true—partly because it’s such a widely known best practice.</p>
+                <p>Today, what’s giving marketers an advantage is data and automation. <strong>Their advantage is the
+                        machine</strong>.
+                </p>
+                <p>In this step-by-step guide, we’ll show you how conversion intelligence works and explain the ways
+                    that it can help
+                    you out-optimize the competition.<br></p>
+            </div>
+            <div class="fiximg">
+                <img src="https://unbounce.com/wp-content/webp-express/webp-images/doc-root/photos/CI_Pillar_Oli.jpeg.webp"
+                    alt="">
+                <p> Oli Gardner , Co-Founder, Unbounce</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="bodyfix">
+        <div class="fixhading">
+            <h2>
+                So, You Want to Adopt a Conversion Intelligence Process
+            </h2>
+        </div>
+        <div class="fixp">
+            <p>
+                <a href="#"><span style="font-weight: 400; color: #000000;"><strong>What
+                            Is Conversion
+                            Intelligence?</strong></span></a><span style="font-weight: 400;"> – Ready for a whole new
+                    approach to optimization? Learn how advances in data technology
+                    have created an opportunity for you to seriously level up your marketing.</span>
+            </p>
+            <p><a href="#conversion_intelligence_loop"><span style="font-weight: 400; color: #000000;"><strong>The
+                            Conversion
+                            Intelligence Loop</strong></span></a> <span style="font-weight: 400;"> – Conversion
+                    intelligence is an active, iterative process where you combine your
+                    marketing know-how with the analytical power of AI. Not just once, but over and over again.</span>
+            </p>
+            <p>Your best hope for cutting through the noise is optimization—finding ways to incrementally improve
+                your campaigns and
+                create higher-converting experiences. But for lots of businesses, that’s easier said than done.</p>
+
+            <p> <a href="#"><span style="font-weight: 400; color: #000000;"><strong>The Loop:
+                            Learn</strong></span></a> <span style="font-weight: 400;"> – At the beginning of the
+                    conversion intelligence process, you’ll explore actionable
+                    insights (based on predictive, machine-validated data) that will help you understand what makes your
+                    audience
+                    convert.</span></p>
+            <p>
+                <a href="#____the_loop__build"><span style="font-weight: 400; color: #000000;"><strong>The Loop:
+                            Build</strong></span></a> <span style="font-weight: 400;"> – Informed by data insights and
+                    with the support of AI-powered tools, you can
+                    confidently assemble higher-converting digital experiences—before your campaign even
+                    launches.</span>
+            </p>
+
+            <p><a href="#"><span style="font-weight: 400; color: #000000;"><strong>The Loop:
+                            Optimize</strong></span></a> <span style="font-weight: 400;"> – It’s time to turn things
+                    over to the machine. Use a conversion intelligence tool to
+                    automatically optimize the conversion journey and generate new, personalized insights, enabling you
+                    to start the
+                    process from the beginning.</span>
+            </p>
+
+        </div>
+    </div>
+
+    <div id="body4">
+        <div id="hadingdiv">
+            <h2>What Is Conversion Intelligence? </h2>
+        </div>
+        <div id="tpdiv">
+            <p>Simply put, <strong><a href="#">conversion intelligence</a>
+                    is the
+                    combination of your marketing intelligence—your experience, your creativity, your intuition—with the
+                    analytical
+                    power of artificial intelligence</strong>.</p>
+            <p>It’s part of a <a
+                    href="#">broader
+                    trend</a> reshaping how businesses use technology to deliver better-performing digital experiences.
+                The internet
+                is getting crowded and it’s become increasingly difficult for marketers to reach (and convert) their
+                customers.
+                Small businesses need a better way to compete—and today, <strong>many recognize that <a
+                        href="#" rel="noopener"
+                        target="_blank">integrating AI into their marketing is critical to future success</a></strong>.
+            </p>
+
+        </div>
+    </div>
+    </div>
+    <div id="body5">
+        <img src="https://unbounce.com/photos/Desktop-Image-What-is-CI-Optimize-Pillar.jpg" alt="">
+    </div>
+    <!-- ---------------- -->
+
+    <div id="body6">
+        <!-- frist div -->
+        <div>
+            <p>Just think about <a href="#" rel="noopener"
+                    target="_blank">Google’s Responsive Ads</a> or the <a
+                    href="#"
+                    rel="noopener" target="_blank">AI tech behind Facebook Ads delivery</a>. These accessible tools are
+                analyzing
+                huge amounts of data to provide marketers with recommendations that make their content more relevant for
+                target
+                audiences. Instead of guessing what’ll work or waiting around for test results, businesses can
+                collaborate with AI
+                to optimize their campaigns in real-time—and that means more conversions.</p>
+
+            <p>There are plenty of SMB marketers who are already taking advantage. Daniel Parscale from CD Baby used
+                Unbounce’s
+                AI-powered optimization tools to get a <a
+                    href="#">double-digit
+                    lift in his conversion rates</a>. Mats Moy <a
+                    href="#">quintupled
+                    his consulting
+                    business’s growth</a> by using machine learning to automatically optimize visitors’ path to
+                conversion.</p>
+            <p>But this is more than a new way of thinking about marketing or adding to expanding your technology stack.
+                <strong>Conversion intelligence is an active, iterative process in which the marketer and “the machine”
+                    work
+                    together to get better results than either could on their own</strong>.
+            </p>
+
+        </div>
+        <!-- second div -->
+        <div>
+            <div>
+                <h2>
+                    We have to stop thinking of our tools as tools, and start thinking of them as employees we can trust
+                    to do their
+                    jobs.
+                </h2>
+            </div>
+            <!-- last div -->
+            <div>
+                <div>
+                    <img src="https://unbounce.com/photos/CI_Manifesto_Profile_Daniel_Parscale.jpg" alt="">
+                </div>
+                <div>
+                    <p>Daniel parscale <br> Digital, CD Baby</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- ------------ -->
+    <!-- start -->
+    <div id="body7a">
+        <h2> The Conversion Intelligence Loop</h2>
+        <p>Now we know a bit about what conversion intelligence is—but how can you make it work for your campaigns?</p>
+        <p>The most effective applications of conversion intelligence follow a similar loop: learn, build, and optimize
+        </p>
+        <img src="https://unbounce.com/photos/Desktop-Image-Loop-Steps-Horizontal-Optimize-Pillar.jpg" alt="">
+        <div id="b7box">
+            <div>
+                <h3>Lean</h3>
+                <p>Explore data trends and conversion patterns (in the form of insights) to learn what works best for
+                    your target audience.</p>
+            </div>
+
+            <div>
+                <h3>Build</h3>
+                <p>Use insights to inform your creative process and build higher-converting campaigns, right from the
+                    start.</p>
+            </div>
+
+            <div>
+                <h3>Optimize</h3>
+                <p>Work with AI to automatically optimize your content and deliver the most relevant experiences to each
+                    visitor.</p>
+            </div>
+        </div>
+        <p>Imagine you’re launching a campaign to get people signed up for a trial of your software.</p>
+        <p>First, you <strong>learn</strong> how to create higher-performing content by researching machine-derived
+            insights
+            related to your audience. Next, you <strong>build</strong> your campaign assets (like ads and landing pages)
+            using
+            those insights and often with assistance from the machine itself. Finally, you allow the machine to
+            <strong>optimize</strong> your campaign based on incoming data while simultaneously generating new
+            insights—allowing
+            you to start the process over again.
+        </p>
+        <p>
+            That’s an important point. Conversion intelligence isn’t a process you apply once, or only when you’re first
+            building
+            your marketing assets. To maximize your conversions,
+        </p>
+        <p>
+            Below, we’ll explore each of these three steps in closer detail.
+        </p>
+    </div>
+
+    <!-- end -->
+    <div id="body2">
+        <div id="imgdiv">
+            <img src="https://unbounce.com/wp-content/webp-express/webp-images/doc-root/photos/Victoria-Harkes-headshot.png.webp"
+                alt="">
+        </div>
+        <div id="pdiv">
+            <p>The Design Assistant makes it so I don’t need to look at competitors, do the research, and can trust
+                that
+                you’re going
+                to tell me what’s going to work.</p>
+            <p>Zoe Alexander, Marketing Project Manager</p>
+            <p>P A N T H E O N</p>
+        </div>
+    </div>
+    <div id="body3">
+        <h3>See how Smart Builder gets you more conversions</h3>
+        <button>Learn more</button>
+    </div>
+    </div>
+    <!-- skiped section -->
+    <div class="link">
+        <h4>RELATED</h4>
+        <a href="#">What is Conversion Intelligence</a>
+        <a href="#">Conversion Intelligence--The new Era of Marketing </Nav></a>
+        <hr style="height:1px; width:100%; border-width:0; color:#303030; background-color: #303030">
+    </div>
+
+    <div class="oli bg cl">
+        <div class="olidiv">
+            <h3 class="fn1">Oli Gardner: "The Champion is a Lie"</h3>
+            <p class="fn2">Hey, it’s Oli again. Throughout this guide, you’ll find some of my additional thoughts in
+                callout boxes
+                like this one.
+                (Just look for the dark background.)</p>
+            <p class="fn2">
+                Until now, the standard practice of marketing optimization was to build and launch your campaign, see
+                how it performs,
+                do some research and analysis, then come up with a hypothesis for an A/B test. The goal is to find a
+                “champion”—the
+                highest-converting version of whatever you’re testing, whether it’s an ad, email, or landing page.
+            </p>
+
+            <p class="fn2">
+                To me, there are some major problems with this approach.
+            </p>
+            <div class="boxes">
+
+                <div>
+                    <h3>It Takes Way, Way Too Long</h3>
+                    <p>Ideally, an A/B test will take about three weeks to complete—but if you’re not getting enough
+                        traffic, it could be
+                        months, or longer.</p>
+                </div>
+
+                <div>
+                    <h3>It’s Usually Not Definitive</h3>
+                    <p>The most common outcome for an A/B test is a “conversion flatline.” Neither variant proves to be
+                        significantly better
+                        than the other.</p>
+                </div>
+
+                <div>
+                    <h3>It Costs You Conversions</h3>
+                    <p>Not every visitor is the same. When you choose a champion, you’re losing all of the people who
+                        would only convert on the
+                        other variant.</p>
+                </div>
+
+            </div>
+            <!-- ------ -->
+
+
+            <p class="fn2">Conversion intelligence (using a tool like Unbounce) solves all of these issues . Rather than
+                waiting
+                for the results of a test, you start with AI-backed insights that help you create optimized
+                campaigns before you even hit publish. You can create as many variants as you like (without
+                obsessing over perfection),
+                then let machine learning algorithms automatically optimize the path to conversion—the way Smart
+                Traffic does. And
+                because you’re not throwing “loser” variants away, you’re never missing an opportunity to get a new
+                customer.</p>
+            <p class="fn2">You get better conversion results—and you get them significantly faster</p>
+
+
+            <!-- ------ -->
+
+        </div>
+    </div>
+    <!-- the loop -->
+    <!-- <div class="theloop">
+        <div class="olidiv">
+            <h2>The Loop: Learn</h2>
+            <p>Yeah, we know—you’re probably more comfortable building something and learning from it. But a few minutes of
+                smart research now will help you get better results later.</p>
+            <p>Conversion intelligence is different from traditional optimization. Rather than waiting weeks or even months
+                to find out
+                what’s working for your audience (and what’s not), using this process means you should have a lot of that
+                information
+                before you start building.</p>
+            <p>how</p>
+            <p>It begins with an insight</p>
+        </div>
+    </div> -->
+    <div class="theloop">
+        <div class="olidiv">
+            <h2 class="fn1 cl2">The Loop: Learn</h2>
+            <p class="fn2 cl2">Yeah, we know—you’re probably more comfortable building something and learning from it.
+                But a few minutes
+                of
+                smart research now will help you get better results later.</p>
+            <p class="fn2 cl2">Conversion intelligence is different from traditional optimization. Rather than waiting
+                weeks or even
+                months
+                to find out
+                what’s working for your audience (and what’s not), using this process means you should have a lot of
+                that
+                information
+                before you start building.</p>
+            <p class="fn2 cl2">how</p>
+            <p class="fn2 cl2">It begins with an insight</p>
+        </div>
+    </div>
+    <!-- end the loop -->
+    <!-- what,s an insight -->
+
+    <div class="theloop">
+        <div class="olidiv">
+            <h2 class="fn1 cl2">What’s an Insight?</h2>
+            <p class="fn2 cl2">. It’s not an obscure point lost in a graph or a curious tidbit you can’t do anything
+                with. Insights
+                distill complex
+                information in a way that’s easy to digest and quick to apply, helping you achieve better results in
+                your campaign
+                performance.</p>
+            <p class="fn2 cl2">Here’s an example: Our data shows us that ecommerce landing pages tend to convert better
+                when they’re
+                under 300 words and written at a middle school level (or easier) . If you’re an ecomm marketer, that’s a
+                super clear observation you can use to optimize your landing page right now.</p>
+
+        </div>
+    </div>
+    <!-- insight end -->
+    <!-- conversion benchmarrk -->
+    <div class="conversion">
+        <img src="https://unbounce.com/photos/Desktop-Image-CBR-Ecomm-Readability-Optimize-Pillar.jpg" alt="">
+    </div>
+    <!-- conversion bendchmark end -->
+    <!-- p tag start -->
+    <div class="oli bg3">
+        <div class="olidiv">
+            <p class="fn2"><strong>As marketers, it’s important to differentiate insights from best practices</strong>.
+                Best
+                practices are
+                usually anecdotal, and what works for one person won’t necessarily work for your audience. They also
+                reflect a
+                particular set of conditions—maybe a casual experiment run years ago. In contrast, insights are informed
+                by a
+                significant amount of data, identifying recent trends and patterns from real-life campaigns to show
+                what’s likely to
+                get you the best results.</p>
+        </div>
+    </div>
+    <!-- p tag end-->
+    <!-- find insight -->
+    <div class="oli">
+        <div class="olidiv">
+            <h3 class="fn1 cl2">How Do You Find Insights?</h3>
+            <p class="fn2 cl2">Whether you’re just starting to build your campaign or are optimizing one already in
+                progress, is to
+                explore any
+                relevant insight</p>
+            <p class="fn2 cl2">Insights can come from lots of places—not just Unbounce. For instance, Google Ads
+                automatically supplies
+                marketers
+                with <a href="#" rel="noopener"
+                    target="_blank">insights
+                    about relevant search trends</a>, along with recommendations for applying that information to
+                optimize your
+                campaigns. Insights also don’t necessarily need to be generated with AI. <strong>What matters is that
+                    they’re
+                    validated by reliable data</strong>.</p>
+            <p class="fn2 cl2">Some of the ways you can find insights with Unbounce include the (free) <a
+                    href="#">Conversion Benchmark
+                    Report</a>, which
+                provides industry-specific recommendations on everything from the ideal sentiment of your copy to which
+                traffic
+                channels send the highest-converting visitors. And if you’re working with Unbounce’s <a
+                    href="#">Smart Builder</a>, you’ll get additional insights
+                (like
+                copy
+                recommendations) as you create your campaign.</p>
+
+        </div>
+    </div>
+
+    <!-- find insight end -->
+    <!-- meet your goal img  -->
+    <div class="conversion">
+        <img src="https://unbounce.com/photos/Desktop-Image-Copy-Insights-Optimize-Pillar.jpg" alt="">
+    </div>
+    <!-- meet your goal img end -->
+
+    <!-- start p tag -->
+    <div class="conversion">
+        <p class="fn2 cl2">That’s the benefit of using a conversion intelligence platform: You can rely on the machine
+            to take in new
+            information, crunch the numbers, and generate fresh insights in real-time</p>
+        <p class="fn2 cl2">However you find your insights—when you learn something new that you think could improve your
+            campaign, the
+            next step is
+            to put it into action.</p>
+    </div>
+    <!-- end p tag -->
+    <!-- lear with unbounce -->
+    <div class="oli">
+        <div class="olidiv">
+            <h4 class="fn1 cl2">
+                Next Steps: Learning with Unbounce
+            </h4>
+            <p class="fn2 cl2">Check the latest <a
+                    href="#">Conversion
+                    Benchmark
+                    Report</a> for insights related to your industry and decide which recommendations are most useful.
+                As you start
+                to build your campaign, look for insights specific to your landing pages within the <a
+                    href="#">Smart Builder</a>.</p>
+            <p class="fn2 cl2"> <strong>Example:</strong>You’re launching a software product and you want people to
+                register for a free
+                trial. Before you start building your
+                campaign, you check the Conversion Benchmark Report for software industry insights and learn that short
+                pages (less than
+                250 words) convert more often, plus your prospects generally respond better to positive language. Hey,
+                you can use that.</p>
+
+        </div>
+    </div>
+    <!-- end learn with unbounce -->
+    <!-- your 2021 img -->
+    <div class="conversion">
+        <img src="https://unbounce.com/wp-content/webp-express/webp-images/doc-root/photos/Desktop-Image-CBR2021-CTA-Optimize-Pillar-768x409.jpg.webp"
+            alt="">
+    </div>
+    <!-- your 2021 end -->
+    <!-- the loop build start -->
+    <div class="conversion">
+        <h2 class="fn1 cl2">The Loop: Build</h2>
+        <p class="fn2 cl2">At this stage of a conversion intelligence process, <strong>you have the information—the
+                insights—you need to
+                start
+                building better-performing content for your audience</strong>.</p>
+        <p class="fn2 cl2">You probably won’t have insights for every element of your campaign, and that’s okay. The
+            goal is to create
+            the best
+            version of an ad, email, or landing page using what we <em>already</em> know before turning things over to
+            the
+            machine. Where there are gaps, you can still rely on established principles for <a
+                href="#">conversion-centered design</a> and <a
+                href="#">high-impact
+                copywriting</a>.</p>
+    </div>
+    <!-- the loop build end  -->
+    <!-- how to apply insight start -->
+    <div class="conversion">
+        <h3 class="fn1 cl2">How to Apply Insights</h3>
+        <p class="fn2 cl2">When you’re building a new campaign, insights should inform the process right from the start.
+            And not just
+            for your
+            landing page—for every asset you create.</p>
+        <p class="fn2 cl2">Let’s say you’re trying to collect leads for a realty company:</p>
+        <ul class="fn2 cl2">
+            <li>As you start to build your landing page, Unbounce’s <a
+                    href="#">Smart
+                    Builder</a> might use sentiment analysis to recommend a different headline.</li>
+            <li>You would know from the <a
+                    href="#">Conversion
+                    Benchmark Report</a> that your page should use fewer form fields and be neutral in tone.</li>
+            <li>You would also know that social visitors tend to perform better than search, which might encourage you
+                to run
+                more Facebook ads.</li>
+            <li>Before creating those ads, you could use <a
+                    href="#" rel="noopener"
+                    target="_blank">Facebook Audience Insights</a> to learn more about your ideal customers and further
+                tailor
+                your messaging.</li>
+        </ul>
+        <p class="fn2 cl2">And so on, and so on. In this way, <strong>you can confidently assemble a higher-converting
+                campaign before
+                it even
+                launches</strong>.</p>
+        <p class="fn2 cl2">Applying insights to a campaign in progress isn’t much different—and if you’re working with
+            conversion
+            intelligence
+            tools, you’ll probably find yourself doing it often. That’s because the machine should be constantly
+            processing data
+            to identify new opportunities for optimization.</p>
+
+    </div>
+    <!-- how to apply insight end -->
+    <!-- oil Gardner start -->
+    <div class="oli bg">
+        <div class="olidiv cl ">
+            <h3 class="fn1 cl">Oli Gardner: “Understand the Keys to Conversion”</h3>
+            <p class="fn2">My thought process for landing page optimization has always focused on the intersection of
+                the four keys
+                to
+                conversion, where copy, design, interaction, and psychology meet to persuade a visitor to act. But based
+                on new
+                Unbounce research, we now have insights that show we should be optimizing for a <em>fifth key</em>, too:
+                the traffic
+                factors that shape each visitor’s arrival.</p>
+
+        </div>
+        <div class="conversion">
+            <img src="https://unbounce.com/photos/Desktop-Im-5-keys-to-conversion-Optimize-Pillar.jpg" alt="">
+        </div>
+        <div class="olidiv cl">
+            <p class="fn2">For copy and psychology, we can optimize the emotion, sentiment, word count, and reading ease
+                of our
+                content. Design
+                and interaction factors include things like page layout, distraction removal, and how we structure our
+                lead gen
+                forms. And now for traffic, we can start to consider things like which platforms visitors are arriving
+                from.</p>
+            <p class="fn2">The <a href="#">Conversion
+                    Benchmark
+                    Report</a> contains
+                a huge amount of research into these different elements and provides insights broken down by industry
+                category. It’s
+                a great place to start finding actionable advice to optimize your campaigns.</p>
+        </div>
+    </div>
+
+    <!-- oil Gardner end -->
+    <!-- building with machine start -->
+    <div class="oli">
+        <div class="olidiv cl2">
+            <h3 class="fn1">Building with the Machine</h3>
+            <p class="fn2">Marketing AI exists to support and amplify your own capabilities. While you’re building your
+                campaign,
+                that
+                means a
+                conversion intelligence tool should be actively assisting you in creating higher-converting content
+                (like <a href="#">Smart Builder</a> does).</p>
+
+        </div>
+    </div>
+
+    <div class="conversion cl2">
+        <img src="https://unbounce.com/photos/Desktop-Image-Builder-Optimize-Pillar.jpg" alt="">
+        <p class="fn2">However, <strong>it’s important that you also build in a way that maximizes the machine</strong>.
+        </p>
+        <p class="fn2">Unlike traditional optimization where you’re trying to find a “champion” version of your
+            campaign,
+            <strong>AI-powered
+                optimization often means creating multiple conversion paths</strong>, then using the processing power of
+            the
+            machine to deliver the most relevant experience to each visitor. But in order to do that, marketers need to
+            build
+            their campaigns a little differently.
+        </p>
+        <p class="fn2">Google’s Responsive Ads require that marketers write multiple versions of their headline,
+            description, and so
+            on,
+            then use machine learning to predict (and assemble) the highest-converting ad for each recipient. Similarly,
+            marketers using Unbounce’s <a href="#">Smart Traffic</a> need to
+            create
+            variants of their landing page if they want to use AI to route each visitor to the version that’s best for
+            them.</p>
+        <p class="fn2">Generally, you might think of it this way: <strong>You build, the machine optimizes</strong>.</p>
+        <p class="fn2">Every conversion intelligence tool will have different requirements—but to get the best results,
+            ensure
+            you’re
+            building with the technology in mind.</p>
+    </div>
+    <!-- build with machine end -->
+
+    <!-- remix your content start -->
+    <div class="oli bg">
+        <div class="olidiv cl">
+            <h3 class="fn1">Oli Gardner: “Remix Your Content”</h3>
+            <p class="fn2"><strong>Taking full advantage of conversion intelligence tools means changing the way you
+                    approach
+                    content
+                    creation</strong>.</p>
+            <p class="fn2">Take Unbounce. Our <a href="#">Smart Traffic</a>
+                feature uses
+                AI to
+                automatically route your visitors to the landing page variant where they’re most likely to convert. So
+                by creating
+                several versions of your page before you launch your campaign, you’ll increase your chances of success.
+            </p>
+            <p class="fn2">If you’re thinking “jeez Oli, that’s too much work—I just wanna launch,” consider that 1) our
+                customers
+                see <strong>an average of 30% lift in conversion rates</strong>, and 2) with the right approach,
+                <strong>variant creation is easier than you think</strong>.
+            </p>
+
+            <p class="fn2">To remove some of the complexities associated with variant design, it helps to divide the
+                page into
+                <strong>semantic
+                    sections</strong>—groupings of page elements that share a related meaning or purpose.
+            </p>
+        </div>
+
+        <div class="conversion">
+            <img src="https://unbounce.com/photos/Desktop-Image-The-Semantic-Sections-of-a-Landing-Page-Optimize-Pillar.jpg"
+                alt="">
+        </div>
+
+        <div class="olidiv cl">
+            <p class="fn2">A great exercise is to come up with a few versions of each of these sections, which become
+                building
+                blocks that you can mix and match to create interesting new variants.</p>
+            <p class="fn2">To illustrate, for the value proposition section we could create three versions based on the
+                insights
+                explored in the
+                <a href="#">Conversion Benchmark Report</a>.
+                One version
+                could have more positive sentiment and another with shorter copy (like a headline, but no subhead). You
+                might even
+                create a “dark mode” version that might provide a better experience early or late in the day.
+            </p>
+
+        </div>
+        <div class="conversion">
+            <img src="https://unbounce.com/photos/Desktop-Image-3x-versions-of-value-prop-Optimize-Pillar.jpg" alt="">
+        </div>
+
+        <div class="olidiv cl fn2">
+            <p>Repeat this with the other semantic sections and you’ll quickly have a mini library of assets to combine
+                into new
+                variants.</p>
+        </div>
+    </div>
+    <!-- remix your content end -->
+    <!-- next step building start -->
+    <div class="oli bg3">
+        <div class="olidiv cl2">
+            <h4 class="fn1">Next Steps: Building with Unbounce</h4>
+            <p class="fn2">Using insights, build or modify your campaign’s primary landing page in the Unbounce <a
+                    href="#">Smart Builder</a>. Then create multiple (ideally
+                three or four) variants of your landing page, using either additional insights or your own marketing
+                expertise.</p>
+            <p class="fn2"><em><strong>Example:</strong> Equipped with insights, you’re ready to start building your
+                    software
+                    campaign. You
+                    create a new landing page with Smart Builder, which automatically suggests templates best suited to
+                    your
+                    campaign goals. You write your copy with the insights in mind (“Under 250 words!” “Positive
+                    language!”), then
+                    create several variants of the page. You’re all set.</em></p>
+        </div>
+    </div>
+    <!-- next step building end -->
+    <!-- optimized experience start -->
+    <div class="conversion bg3">
+        <img src="https://unbounce.com/wp-content/webp-express/webp-images/doc-root/photos/Desktop-Image-Smart-Traffic-CTA-Optimize-Pillar-768x409.jpg.webp"
+            alt="">
+    </div>
+    <!-- optimized experience end -->
+
+    <!-- the loop optimize start -->
+    <div class="oli bg3">
+        <div class="olidiv cl2">
+            <h2 class="fn1">The Loop: Optimize</h2>
+            <p class="fn2">You’ve researched insights to learn what resonates best with your prospects and customers.
+                You’ve used
+                that
+                information to build higher-performing content. <strong>Now, you’re ready to optimize with AI</strong>.
+            </p>
+            <p class="fn2">It’s at this stage that you see the power of a conversion intelligence process. Utilizing the
+                predictive
+                capabilities
+                of the machine, you can deliver more impactful, more relevant content to your target audience.
+                Consistently,
+                <strong>the result is a higher conversion rate than you could expect with traditional optimization
+                    methods—and in a
+                    fraction of the time, not to mention effort</strong>.
+            </p>
+
+
+        </div>
+    </div>
+    <!-- the loop optimize end -->
+    <!-- optimize with AI start -->
+    <div class="oli bg3">
+        <div class="olidiv cl2">
+            <h3 class="fn1">Optimizing with AI</h3>
+            <p class="fn2">To this point, you’ve been optimizing your campaign manually. It’s time to turn things over
+                to the
+                machine.</p>
+            <p class="fn2">Exactly what this looks like will depend on the conversion intelligence tool you’re using.
+                The general
+                principle,
+                though, is that <strong>AI should be using new data to identify conversion opportunities and help you
+                    provide
+                    optimized experiences for your audience</strong>.</p>
+            <p class="fn2">Let’s use Unbounce as an example. Once you’ve built multiple variants of your landing page,
+                you can
+                launch (or
+                relaunch) your campaign using <a href="#">Smart Traffic</a>.
+                Our AI
+                technology will immediately begin to analyze how well different types of people convert on each page,
+                then—based on
+                that analysis—start routing traffic to the variant where the machine thinks it’s likely to convert.</p>
+
+            <p class="fn2">Bottom line: <strong>Every visitor is seamlessly delivered the experience that’s most
+                    relevant for
+                    them</strong>.</p>
+        </div>
+    </div>
+    <!-- optimize with AI end -->
+
+    <!-- vedio start  -->
+    <div class="conversion">
+        <img src="https://embed-ssl.wistia.com/deliveries/0cc51641f7d1e49ee1d55cea4b22dac9.webp?image_crop_resized=1920x1080"
+            alt="">
+    </div>
+    <!-- vedio end -->
+
+    <!-- the personalizaion experiment start -->
+    <div class="oli bg ">
+        <div class="olidiv cl">
+            <h3 class="fn1">Oli Gardner: “The Personalization Experiment Failed”</h3>
+            <p class="fn2">In the same way that we’ve heard “it’s the year of mobile” since 200X, marketers and
+                marketing platforms
+                have been
+                talking about personalization for at least a decade. Yet, we’ve barely moved beyond |FNAME|.</p>
+
+            <p class="fn2">Smart, talented marketers have been making all the right moves—like creating multiple landing
+                pages for
+                their
+                campaigns, and targeting them (to increase relevance) to the audiences they <em>thought</em> were the
+                best fit. The
+                intent is spot on, but it’s really hard to get right, and harder still to scale.</p>
+            <p class="fn2"><strong>Conversion intelligence challenges the notion that we need to choose what our
+                    audiences
+                    want</strong>.
+                (Because, frankly, we’re not very good at it.) Technology like <a
+                    href="#">Smart Traffic</a> alleviates well-intended human
+                errors and
+                instead uses ongoing data analysis to mathematically predict which content will be most impactful for
+                each visitor.
+            </p>
+
+            <p class="fn2">So, |FNAME|, let’s leave this part to the machines.</p>
+        </div>
+    </div>
+    <!-- the personalizaion experience end -->
+
+    <!-- discover new insight start -->
+    <div class="oli">
+        <div class="olidiv cl2">
+            <h3 class="fn1">Discover New Insights</h3>
+            <p class="fn2">Automatic optimization is just one way that AI augments your marketing. As data is collected
+                and
+                analyzed,
+                <strong>the machine should continue to present new insights, enabling you to start the conversion
+                    intelligence
+                    process over again</strong>.
+            </p>
+            <p class="fn2">Once Smart Traffic has received a sample of visitors, for instance, you might see an
+                opportunity to
+                create a new
+                landing page variant to improve your performance for mobile traffic. Or you might find that one of your
+                pages is
+                converting especially well with visitors from a particular country—information you can use for future
+                campaigns
+                targeting that demographic.</p>
+            <p class="fn2">Receiving new insights effectively closes the conversion intelligence loop—but as we’ve
+                stressed
+                throughout,
+                <strong>this process should be applied repeatedly throughout your campaign</strong>.
+            </p>
+        </div>
+    </div>
+    <!-- discover new insight end -->
+    <!-- next step optimization with unbounce strat -->
+    <div class="oli bg3">
+        <div class="olidiv cl2">
+            <h4 class="fn1">Next Steps: Optimizing with Unbounce</h4>
+            <p class="fn2">Turn on Smart Traffic and allow the machine to automatically route visitors to the landing
+                page variant
+                where they’re
+                most likely to convert. Finally, evaluate new insights and use them to inform additional landing page
+                variants or
+                future campaigns, starting the conversion intelligence process anew.</p>
+            <p class="fn2"><em><strong>Example:</strong> With multiple landing page variants, you’re able to launch your
+                    software
+                    campaign using
+                    Smart Traffic. The machine automatically starts routing visitors to the variant where they’re most
+                    likely to
+                    convert, and you watch as your conversion rate climbs. But wait—don’t kick your feet up just yet.
+                    Smart Builder
+                    helps you identify a new opportunity to optimize your campaign. Start the conversion intelligence
+                    process over
+                    again.</em></p>
+        </div>
+    </div>
+    <!-- next step optimization with unbounce end -->
+    <!-- your never finished start -->
+    <div class="oli bg">
+        <div class="olidiv cl">
+            <h3 class="fn1">Oli Gardner: “You’re Never Finished Optimizing”</h3>
+            <p class="fn2">Alright, we’ve thrown a lot of information at you, so let’s run through an example of the
+                conversion
+                intelligence
+                process using an imaginary ecommerce company to illustrate.</p>
+        </div>
+
+        <div class="conversion cl">
+            <img src="https://unbounce.com/photos/Infographic-2x.jpg" alt="">
+            <p class="fn2">Nah, you don’t need a magnifying glass. Just click the infographic to see a larger version.
+            </p>
+        </div>
+
+    </div>
+    <!-- your never finished end -->
+    <!-- start marketing smarter by adopting -->
+    <div class="oli">
+        <div class="olidiv cl2">
+            <h2 class="fn1">Start Marketing Smarter by Adopting Conversion Intelligence</h2>
+            <p class="fn2">Conversion intelligence isn’t only about getting better results from your marketing (although
+                you almost
+                certainly
+                will). <strong>When you collaborate with the machine, you can say goodbye to the headaches of
+                    traditional
+                    optimization</strong>. No more guesswork, no more “champions.” AI can help you to make
+                better-informed
+                decisions, automate tasks you previously had to do yourself, and optimize with a speed and accuracy not
+                previously
+                possible.</p>
+            <p class="fn2"><strong>Getting a boatload more conversions is just the cherry on top</strong>.</p>
+
+            <p class="fn2">This isn’t the future—it’s happening right now. See for yourself when you sign up and get
+                access to the
+                entire
+                Unbounce Conversion Intelligence™️ platform, including Smart Builder, Smart Traffic, and more.</p>
+
+        </div>
+    </div>
+    <!-- start marketing smarter by adopting end -->
+    <!-- image start  -->
+    <div class="conversion">
+        <img src="https://unbounce.com/wp-content/webp-express/webp-images/doc-root/photos/Desktop-Image-Smart-Builder-CTA-Optimize-Pillar-768x409.jpg.webp"
+            alt="">
+    </div>
+    <!-- image end -->
+</body>
+
+</html>
+<script src="/scripts/link.js" type="module"></script>
