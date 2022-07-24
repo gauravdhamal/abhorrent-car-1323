@@ -9,6 +9,9 @@
     background-color: rgb(255,255,255);
 }
 
+.space{
+    padding: 3%;
+}
 
 #p_row_gutter{
     display: flex;
