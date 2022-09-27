@@ -35,11 +35,11 @@ Unbounce is a Canadian software company produces landing pages for websites. All
 
 - Solutions Section
 
-![image](https://user-images.githubusercontent.com/86916671/192466111-6aa18b63-ddc8-43e9-9439-a2e2ba54fbdc.png)
+![image](https://user-images.githubusercontent.com/86916671/192468173-4f70df65-992f-4d0f-a027-4077279e26c9.png)
 
 - Pricing Section
 
-![image](https://user-images.githubusercontent.com/86916671/192466413-c18ff8c0-0dd6-4188-9133-69242857674c.png)
+![image](https://user-images.githubusercontent.com/86916671/192468652-a5e829a6-db29-42c6-8481-45249252c21e.png)
 
 - Learn Section
 
